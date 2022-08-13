@@ -1,0 +1,100 @@
+@import "src/assets/colors.scss";
+
+.cardContainer {
+  cursor: pointer;
+  max-width: fit-content;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.cardPoster {
+  position: relative;
+}
+.cardPoster img {
+  border-radius: 20px;
+  height: 300px;
+  width: auto;
+}
+.cardText {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+.cardTitle {
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  color: $color-white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  &:hover {
+    color: $color-cornflower_blue;
+  }
+}
+.cardDescription {
+  font-weight: 500;
+  font-size: 16px;
+  color: #afb2b6;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.raiting {
+  box-sizing: border-box;
+  background-color: $color-green_haze;
+  width: 37px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: $color-white;
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.highRating {
+  background-color: $color-green_haze;
+}
+.midRaiting {
+  background-color: $color-buttercup;
+}
+.lowRaiting {
+  background-color: $color-crimson;
+}
+#trendRaiting {
+  @extend .raiting;
+  background-color: $color-cornflower_blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  gap: 5px;
+}
+.savedIcon {
+  background-color: $color-outer_space;
+  box-sizing: border-box;
+  width: 37px;
+  border-radius: 5px;
+  padding: 1px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  fill: $color-cornflower_blue;
+}
+
+.cardContainerLight {
+  .cardTitle {
+    color: $color-black;
+    &:hover {
+      color: $color-cornflower_blue;
+    }
+  }
+}

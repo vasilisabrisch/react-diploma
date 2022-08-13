@@ -1,0 +1,122 @@
+@import "src/assets/colors.scss";
+
+.userContainer {
+  box-sizing: border-box;
+  padding: 5px;
+
+  padding-right: 0px;
+  // max-width: 300px;
+  max-width: 250px;
+  min-width: 200px;
+  width: 267px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.userInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.userIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 22px;
+  background-color: $color-cornflower_blue;
+}
+.userName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-white;
+}
+.userAngle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+
+  font-size: 20px;
+}
+.userAngleActive {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+.popupContent {
+  background-color: $color-shark;
+  border: 1px solid $color-outer_space;
+  color: $color-white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 300px;
+  min-width: 200px;
+  width: 260px;
+}
+.popupContentItem {
+  font-weight: 500;
+  font-size: 16px;
+  color: $color-white;
+  padding: 20px;
+  cursor: pointer;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+.topItem {
+  border-bottom: 1px solid $color-outer_space;
+  &:hover {
+    background-color: $color-outer_space;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+.bottomItem {
+  color: $color-cornflower_blue;
+  &:hover {
+    background-color: $color-outer_space;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+.popup-arrow {
+  display: none;
+}
+
+.userContainerLight {
+  .userName,
+  .userAngle {
+    color: $color-black;
+  }
+}
+.popupContentLight {
+  background-color: $color-bombay;
+  border: 1px solid $color-oslo_gray;
+  color: $color-black;
+  .bottomItem {
+    color: $color-black;
+  }
+  .topItem,
+  .bottomItem {
+    &:hover {
+      background-color: $color-oslo_gray;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .userContainer {
+    display: none;
+  }
+}

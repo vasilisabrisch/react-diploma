@@ -1,0 +1,47 @@
+@import "src/assets/colors.scss";
+
+.btn {
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  cursor: pointer;
+  min-width: 200px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.primary {
+  background-color: $color-cornflower_blue;
+  &:hover {
+    background-color: $color-heliotrope;
+  }
+}
+
+.secondary {
+  background-color: $color-outer_space;
+  &:hover {
+    background-color: $color-cape_code;
+  }
+}
+.disabled {
+  background-color: $color-oslo_gray;
+  &:hover {
+    background-color: $color-oslo_gray;
+  }
+}
+
+.sortBtn {
+  background-color: $color-shark;
+  border: 2px solid $color-outer_space;
+  &:hover {
+    background-color: $color-outer_space;
+  }
+}
+.activeSortBtn {
+  border: 2px solid $color-heliotrope;
+}

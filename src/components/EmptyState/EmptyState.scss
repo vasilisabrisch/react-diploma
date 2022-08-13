@@ -1,0 +1,13 @@
+@import "src/assets/colors.scss";
+.emptyStateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.emptyStateMessage {
+  font-size: 20px;
+  font-weight: 600;
+  color: $color-bombay;
+}

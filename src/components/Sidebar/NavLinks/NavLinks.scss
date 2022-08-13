@@ -1,0 +1,32 @@
+@import "src/assets/colors.scss";
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: fit-content;
+  margin-top: 64px;
+  margin-bottom: 170px;
+}
+.menuItem {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  color: $color-oslo_gray;
+  fill: $color-oslo_gray;
+
+  &:hover {
+    color: $color-cornflower_blue;
+    fill: $color-cornflower_blue;
+  }
+}
+.activeTab {
+  color: $color-cornflower_blue;
+  fill: $color-cornflower_blue;
+}
